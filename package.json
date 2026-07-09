@@ -1,0 +1,20 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "Static site built with Eleventy",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "engines": {
+    "node": "20"
+  }
+}
