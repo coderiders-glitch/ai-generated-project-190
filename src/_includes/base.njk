@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+    }
+    h1 {
+      margin: 0;
+      color: #2c3e50;
+    }
+    main {
+      margin-bottom: 2rem;
+    }
+    footer {
+      border-top: 1px solid #eee;
+      padding-top: 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+  </header>
+  
+  <main>
+    {{ content | safe }}
+  </main>
+  
+  <footer>
+    <p>&copy; {{ site.build.timestamp | date: '%Y' }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>
