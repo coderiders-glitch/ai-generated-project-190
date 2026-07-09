@@ -1,0 +1,12 @@
+{
+  "title": "Static Site",
+  "description": "A static site built with Eleventy",
+  "url": "http://localhost:8080",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "build": {
+    "timestamp": "{{ 'now' | date: '%Y-%m-%d %H:%M:%S' }}"
+  }
+}
